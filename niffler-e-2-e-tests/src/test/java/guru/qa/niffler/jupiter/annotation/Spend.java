@@ -11,10 +11,14 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})
 public @interface Spend {
 
+    String category();
+
     CurrencyValues currency();
 
     double amount();
 
     String description();
+
+    String username();
 
 }
